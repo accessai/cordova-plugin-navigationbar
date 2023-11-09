@@ -48,6 +48,11 @@ var NavigationBar = {
     },
 
     backgroundColorByHexString: function (hexString, lightNavigationBar) {
+
+        if(!hexString || hexString == ""){
+            return;
+        }
+
         if (hexString.charAt(0) !== "#") {
             hexString = "#" + hexString;
         }
